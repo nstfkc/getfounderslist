@@ -36,6 +36,7 @@ export default function Home() {
               <strong>companies</strong>.
             </p>
             <p>Search by location, industry, company size and more.</p>
+            <p>Export to excel or csv</p>
           </div>
           <div className="h-8"></div>
           <div>
