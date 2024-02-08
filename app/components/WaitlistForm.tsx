@@ -24,16 +24,26 @@ export const WaitlistForm = () => {
   });
 
   if (formState.state === "succeeded") {
-    return <div>{formState.message}</div>;
+    return (
+      <div className="p-4 border-l-2 rounded-md border-stone-800 bg-lime-100">
+        {formState.message}
+      </div>
+    );
   }
 
   if (formState.state === "failed") {
-    return <div>{formState.message}</div>;
+    return (
+      <div className="p-4 border-l-2 rounded-md border-stone-800 bg-red-200">
+        {formState.message}
+      </div>
+    );
   }
 
   return (
     <div className="py-4 flex flex-col gap-2">
-      <div>Join the waitlist to get early access and 50% off.</div>
+      <div>
+        Join the waitlist to get early access and <strong>50%</strong> off.
+      </div>
       <form action={formAction as any}>
         <div className="flex gap-4 items-end">
           <div className="flex flex-col">

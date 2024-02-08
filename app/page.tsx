@@ -3,12 +3,11 @@ import { WaitlistForm } from "./components/WaitlistForm";
 const sampleData = {
   name: "Stephan Gulbal",
   title: "Co-Founder & Chief Innovation Officer",
-  location: "Miami Beach, Florida, United States",
-  about:
-    "Digital transformation: are you ready for exponential change? Futurist Gerd Leonhard, TFAStudios",
+  location: "Florida, United States",
+  about: "Digital transformation: are you ready for exponential change?",
   socials: {
     linkedin: "https://www.linkedin.com/in/stephan-gulbal-0b1b3b1b",
-    x: "https://x.com/sgulbal",
+    x: "https://x.com/stephgulb",
   },
   email: "s.gulbal@proximai.com",
   company: {
@@ -26,24 +25,30 @@ export default function Home() {
   return (
     <main>
       <div className="container max-w-4xl mx-auto py-4 px-4 lg:px-0">
-        <h1 className="font-bold text-xl">Get Founders List</h1>
+        <h1 className="font-bold text-xl">Founders List</h1>
         <div className="h-8"></div>
         <div className="flex flex-col gap-4">
-          <div>
+          <div className="flex flex-col gap-1 text-lg">
             <p>
-              Instantly access to hand-curated database of founders and their{" "}
-              <strong>socials</strong>, <strong>emails</strong>, and{" "}
-              <strong>companies</strong>.
+              Instantly access to
+              <span className="bg-lime-400/40 font-bold"> hand-curated </span>
+              database of founders and their <strong>socials</strong>,{" "}
+              <strong>emails</strong>, and <strong>companies</strong>.
             </p>
-            <p>Search by location, industry, company size and more.</p>
-            <p>Export to excel or csv</p>
+            <p>
+              Search by <strong>location</strong>, <strong>industry</strong>,{" "}
+              <strong>company size</strong> and more.
+            </p>
+            <p>
+              Export to <strong>excel</strong> or <strong>csv</strong>
+            </p>
           </div>
           <div className="h-8"></div>
-          <div>
+          <div className="flex flex-col gap-1">
             <div>
-              Launching at:{" "}
+              Soft-launch at:{" "}
               <time className="font-semibold">14th February 2024</time> with{" "}
-              <strong>+1000</strong> entry
+              <strong>+1000</strong> entry (only available to waitlist members)
             </div>
             <div>
               Expected total entries by the end of the year:{" "}
